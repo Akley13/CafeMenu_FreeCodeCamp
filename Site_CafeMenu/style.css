@@ -1,0 +1,95 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family:sans-serif; /* para fontes diferentes do padrão */
+}
+
+h1 {
+  margin-top: 0; /* Por padrão o h1 já tem uma margem superior, tiramos para ficar condizente com a parte inferior do site */
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.established {
+  font-style: italic;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown; /* POR PADRÃO, BORDAS TEM 1PX A+ NA PARTE SUPERIOR E INFERIOR */
+}
+
+h2 {
+  font-size: 30px;
+}
+  
+h1, h2, p {
+  text-align: center;
+}
+
+h1, h2 { /* PODEMOS ESPECIFICAR ONDE PODEMOS COLOCAR UMA FONTE DIFERENTE */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*AS OUTRAS FONTES SE ENQUADRAM NO QUE CHAMAMOS DE FALLBACKS. SERVIRÁ QUANDO A FONTE INICIAL NÃO FOR ENCONTRADA OU NÃO ESTIVER DISPONIVEL*/
+}
+
+.menu { /* NÃO ESQUEÇA DE USAR PONTO FINAL (.) PARA COLOCAR AS CLASSES NO CSS */
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px; /* EVITA DISTÂNCIAMENTO DESNECESSÁRIO */
+}
+
+img {
+  margin-top: -25px; /* MARGEM NEGATIVA */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.item p {
+  display: inline-block; /* COLOCAR ELEMENTOS NA MESMA LINHA */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+  
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+  
+.price {
+  text-align: right;
+  width: 25%
+}
+
+/* FOOTER */
+
+footer {
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:visited { /* PSEUDOSSELETOR - SERVE PARA COLOCAR A COR DE SUA PREFERÊNCIA QUANDO O USUÁRIO JÁ TIVER VISITADO O SITE */
+  color: black;
+}
+
+a:hover { /* MUDA A COR QUANDO O USUÁRIO PASSAR O MOUSE POR CIMA DELE */ 
+  color: brown;
+}
+
+a:active { /* MUDA A COR NO MOMENTO QUE É CLICADO DE FATO E SE MANTÉM ENQUANTO A NOVA ABA ESTIVER ABERTA */ 
+  color: brown;
+}
